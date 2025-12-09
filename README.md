@@ -46,7 +46,7 @@ Open the printed `Local URL` in your browser.
 - **Pattern detection:** Find times of day when highs or lows commonly occur.
 - **PDF export:** Generate a plain-language PDF report for single-day analysis.
 
-## Data
+## Data Description
 
 ### Data
 
