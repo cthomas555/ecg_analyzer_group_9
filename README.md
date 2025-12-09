@@ -48,7 +48,11 @@ Open the printed `Local URL` in your browser.
 
 ## Data Description
 
-### Data
+### Data Source
+
+The CGM data files in the `data/` directory are **synthetically generated** for educational and testing purposes. These datasets simulate realistic continuous glucose monitoring patterns for people with type II diabetes, including various clinical scenarios such as hypoglycemic episodes, exercise effects, and day-to-day variability. The synthetic data was created to demonstrate CGM analytics without using protected health information (PHI) or real patient data.
+
+### Dataset Descriptions
 
 Several synthetic CGM scenarios are provided for testing:
 
@@ -60,14 +64,33 @@ Several synthetic CGM scenarios are provided for testing:
 - `data/cgm_exercise_day.csv`: Day with exercise events and their impact on glucose.
 - `data/cgm_sick_day.csv`: Day with illness-related glucose changes.
 
-All files use ISO 8601 timestamps and mg/dL units.
+All files use ISO 8601 timestamps and mg/dL units. Each dataset contains approximately 288 readings (one every 5 minutes for a 24-hour period).
 
 ## Project Structure
 
-- `app.py` – Streamlit application (fully commented for clarity).
-- `data/` – Synthetic CGM datasets for various scenarios.
-- `requirements.txt` – Python dependencies.
-- `main.lua` – Original LÖVE sample (unused by the CGM app).
+```
+ecg_analyzer_group_9/
+├── app.py                           # Streamlit application (fully commented for clarity)
+├── requirements.txt                 # Python dependencies
+├── README.md                        # Project documentation
+├── .gitignore                       # Git ignore rules
+├── .vscode/                         # VS Code settings
+│   └── settings.json
+├── .devcontainer/                   # Development container configuration
+│   ├── devcontainer.json
+│   ├── Dockerfile
+│   ├── setup.sh
+│   ├── supervisord.conf
+│   └── requirements.txt
+└── data/                            # Synthetic CGM datasets for various scenarios
+    ├── cgm_sample.csv               # Well-controlled day with meal excursions
+    ├── cgm_hypoglycemia.csv         # Multiple hypoglycemic episodes
+    ├── cgm_high_variability.csv     # Large glucose swings
+    ├── cgm_well_controlled.csv      # Stable glucose, minimal excursions
+    ├── cgm_weekend.csv              # Weekend pattern with different meal times
+    ├── cgm_exercise_day.csv         # Exercise events and their impact
+    └── cgm_sick_day.csv             # Illness-related glucose changes
+```
 
 ## Features
 
