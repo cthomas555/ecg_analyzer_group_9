@@ -17,8 +17,7 @@
         "ms-toolsai.jupyter",
         "ms-python.python",
         "github.copilot",
-        "github.copilot-chat",
-        "sumneko.lua",
+        "github.copilot-chat"
       ],
       "settings": {
         "terminal.integrated.shell.linux": "/bin/bash"
