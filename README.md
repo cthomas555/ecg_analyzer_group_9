@@ -1,12 +1,6 @@
 # Continuous Glucose Monitoring Explorer
 
-Streamlit dashboard for exploring continuous glucose monitoring (CGM) data for people with type II diabetes. Includes:
-- Bundled synthetic CGM days (various scenarios)
-- Multi-day comparison and overlay
-- Event logging (meals, medication, exercise)
-- Time-in-range analysis, event detection, and pattern finding
-- PDF report export
-- User-friendly feedback and plain-language summaries
+Streamlit dashboard for exploring continuous glucose monitoring (CGM) data for people with type II diabetes.
 
 ## Biomedical Context
 
