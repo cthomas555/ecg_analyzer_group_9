@@ -64,8 +64,6 @@ All files use ISO 8601 timestamps and mg/dL units.
 
 ## Project Structure
 
-## Project Structure
-
 - `app.py` – Streamlit application (fully commented for clarity).
 - `data/` – Synthetic CGM datasets for various scenarios.
 - `requirements.txt` – Python dependencies.
